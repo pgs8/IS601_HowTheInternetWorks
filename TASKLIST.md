@@ -14,6 +14,7 @@
     - [x] Examples
     - [x] Why do we use them?
     - [x] Image with caption
+- [x] Enable GitHub Pages
 - [ ] Add content to Pages
     - [ ] Index page with a brief introduction to the topics below
     - [ ] an ABOUT page for bio and project info
