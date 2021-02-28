@@ -22,5 +22,5 @@
         - [x] Domain names and ICANN
         - [x] IP Addresses, Packets and Routing
         - [x] DNS
-        - [ ] HTTP and HTTPS protocols
+        - [x] HTTP and HTTPS protocols
         - [ ] W3C and HTML and CSS

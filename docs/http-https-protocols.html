@@ -4,37 +4,38 @@
     <meta charset="UTF-8">
 
     <title>HTTP and HTTPS Protocols :: How the Internet Works :: IS 601 :: Spring 2021</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/bootstrap.bundle.min.js"></script>
 
 </head>
 <body class="bg-dark">
-<nav id="navbar-nav" class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top" id="navbar-nav">
     <div class="container-fluid">
         <span class="navbar-brand mb-0 h1">How the Internet Works</span>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-sm-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    <a aria-current="page" class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="about.html">About</a>
+                    <a aria-current="page" class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownContent" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">
+                    <a aria-expanded="false" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                       id="navbarDropdownContent" role="button">
                         Content
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownContent">
+                    <ul aria-labelledby="navbarDropdownContent" class="dropdown-menu">
                         <li><a class="dropdown-item" href="domain-names-icann.html">Domain names and ICANN</a></li>
                         <li><a class="dropdown-item" href="ip-addresses-packets-routing.html">IP Addresses, Packets and
                             Routing</a></li>
                         <li><a class="dropdown-item" href="dns.html">DNS</a></li>
-                        <li><a class="dropdown-item active" href="http-https-protocols.html">HTTP and HTTPS protocols</a></li>
+                        <li><a class="dropdown-item active" href="http-https-protocols.html">HTTP and HTTPS
+                            protocols</a></li>
                         <li><a class="dropdown-item" href="w3c-html-css.html">W3C and HTML and CSS</a></li>
                     </ul>
                 </li>
@@ -44,42 +45,63 @@
 </nav>
 
 <main class="container bg-light rounded">
-    <div class="text-center py-5 px-3">
-        <h1 class="border-bottom">HTTP and HTTPS Protocols</h1>
+    <div class="text-center py-3 px-3">
+        <h1 class="border-bottom display-4">HTTP and HTTPS Protocols</h1>
     </div>
-    <div class="row py-5">
-        <h3>Intro</h3>
+    <div class="row py-2">
+        <div class="col-lg-1">&nbsp;</div>
         <div class="col-lg-8">
-            Text placeholder
+            <p>
+                <span class="lead"><em>Hypertext Transport Protocol (HTTP)</em></span> is the protocol used to transfer
+                data over the internet.
+            </p>
+            <p>
+                <span class="lead"><em>Hypertext Transport Protocol Secure (HTTPS)</em></span> is the same as HTTP, but
+                it uses a secure socket layer (SSL) for security.
+            </p>
         </div>
-        <div class="col-lg-4">
-            Image placeholder
-        </div>
+        <div class="col-lg-3">
+            <img src="images/pic_httpHttps_1.jpg" class="rounded float-left img-fluid"/></div>
+        <div class="col-lg-1">&nbsp;</div>
     </div>
-    <div class="row">
-        <h3>Examples</h3>
-        <div class="col-lg-4 py-lg-1">
-            Image placeholder
+    <div class="row py-2">
+        <div class="col-lg-1">&nbsp;</div>
+        <div class="col-lg-5 px-1">
+            <h2>Why do we use them?</h2>
+            <p>
+                HTTP is simple - messages can be read and understood by humans, making testing easier for developers, and reducing complexity for newcomers.
+            </p>
+            <p>
+                HTTP is extensible - HTTP headers make this protocol easy to extend and experiment with.
+            </p>
+            <p>
+                HTTP Request / Response communication between clients and servers is done by requests and responses:
+            </p>
+            <ol>
+                <li>A client (a browser) sends an HTTP request to the web</li>
+                <li>A web server receives the request</li>
+                <li>The server runs an application to process the request</li>
+                <li>The server returns an HTTP response (output) to the browser</li>
+                <li>The client (the browser) receives the response</li>
+            </ol>
         </div>
-        <div class="col-lg-8 py-lg-1">
-            Text placeholder
+        <div class="col-lg-5">
+            <h3>HTTP/HTTPS Flow Example</h3>
+            <blockquote class="font-monospace small text-nowrap overflow-scroll">
+                GET /home.html HTTP/1.1<br />
+                Host: developer.mozilla.org<br />
+                User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:50.0) Gecko/20100101 Firefox/50.0<br />
+                Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8<br />
+                Accept-Language: en-US,en;q=0.5<br />
+                Accept-Encoding: gzip, deflate, br<br />
+                Referer: https://developer.mozilla.org/testpage.html<br />
+                Connection: keep-alive<br />
+                Upgrade-Insecure-Requests: 1<br />
+                If-Modified-Since: Mon, 18 Jul 2016 02:36:04 GMT<br />
+                If-None-Match: "c561c68d0ba92bbeb8b0fff2a9199f722e3a621a"<br />
+                Cache-Control: max-age=0</blockquote>
         </div>
-        <div class="col-lg-4">
-            Image placeholder
-        </div>
-        <div class="col-lg-8">
-            Text placeholder
-        </div>
-    </div>
-    <div class="row-cols-auto"><p>&nbsp;</p></div>
-    <div class="row">
-        <h3>Why do we use them?</h3>
-        <div class="col-lg-4">
-            Image placeholder
-        </div>
-        <div class="col-lg-8">
-            Text placeholder
-        </div>
+        <div class="col-lg-1">&nbsp;</div>
     </div>
     <div class="row-cols-auto"><p>&nbsp;</p></div>
 </main>
