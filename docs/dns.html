@@ -4,32 +4,33 @@
     <meta charset="UTF-8">
 
     <title>DNS :: How the Internet Works :: IS 601 :: Spring 2021</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/bootstrap.bundle.min.js"></script>
 
 </head>
 <body class="bg-dark">
-<nav id="navbar-nav" class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top" id="navbar-nav">
     <div class="container-fluid">
         <span class="navbar-brand mb-0 h1">How the Internet Works</span>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"
+                data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-sm-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    <a aria-current="page" class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="about.html">About</a>
+                    <a aria-current="page" class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownContent" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">
+                    <a aria-expanded="false" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                       id="navbarDropdownContent" role="button">
                         Content
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownContent">
+                    <ul aria-labelledby="navbarDropdownContent" class="dropdown-menu">
                         <li><a class="dropdown-item" href="domain-names-icann.html">Domain names and ICANN</a></li>
                         <li><a class="dropdown-item" href="ip-addresses-packets-routing.html">IP Addresses, Packets and
                             Routing</a></li>
@@ -44,42 +45,61 @@
 </nav>
 
 <main class="container bg-light rounded">
-    <div class="text-center py-5 px-3">
-        <h1 class="border-bottom">DNS</h1>
+    <div class="text-center py-3 px-3">
+        <h1 class="border-bottom display-4">Domain Name System (DNS)</h1>
     </div>
-    <div class="row py-5">
-        <h3>Intro</h3>
+    <div class="row py-2">
+        <div class="col-lg-1">&nbsp;</div>
         <div class="col-lg-8">
-            Text placeholder
+            <p>
+                <span class="lead">The <em>Domain Name System</em></span> is the address book for the internet. Humans
+                enter an easy-to-remember domain name, and the DNS returns the computer-friendly
+                <a href="ip-addresses-packets-routing.html">IP Address</a>. DNS is managed and coordinated by
+                <a href="domain-names-icann.html">ICANN</a>.
+            </p>
+        </div>
+        <div class="col-lg-3">
+            <img class="rounded float-left img-fluid" src="images/pic_dns_1.jpg"/>
+        </div>
+        <div class="col-lg-1">&nbsp;</div>
+    </div>
+    <div class="row py-2">
+        <div class="col-lg-1">&nbsp;</div>
+        <div class="col-lg-6 px-1">
+            <h3>Domain Name System Example</h3>
+            <p>
+                Let's imagine David Lightman wants to view a webpage hosted by the server <em>WOPR</em>.
+                Here's how that happens:
+            </p>
+            <ol>
+                <li>David Lightman types <em>WOPR</em> into his browser.</li>
+                <li>If he is using a modern web browser it will check its built in cache. If the IP Address for WOPR is
+                    found then the process is complete.
+                </li>
+                <li>If the browser came up empty, the next cache checked is the operating system.</li>
+                <li>If the operating system also comes up empty, it will perform a DNS query on a Recursive DNS
+                    Server. Recursive DNS Servers are typically managed by an Internet Service Provider (ISP).
+                </li>
+                <li>The Recursive DNS Server first checks its local cache for the IP Address.</li>
+                <li>If it does not have it cached, it will make a series of queries on David's PC's behalf to locate the
+                    Authoritative DNS Server that does have the IP address. This prevents David's PC from having to keep
+                    track of hundreds of thousands of Authoritative DNS Servers itself.
+                </li>
+                <li>Once the IP address is known, it is sent back to David's PC. The IP Address is also cached by the
+                    Recursive DNS Server, David's PC's operating system, and David's PC's web browser.
+                </li>
+                <li>David can now play a nice game of chess.</li>
+            </ol>
         </div>
         <div class="col-lg-4">
-            Image placeholder
+            <h4>Why do we use it?</h4>
+            <p>
+                IP Addresses are hard to remember - they're just a string of numbers. Domain names on the other hand are
+                mnemonic devices that easily identify a company, group, person, etc. Domain names are registered through
+                any one of a number of ICANN accredited domain name registrars.
+            </p>
         </div>
-    </div>
-    <div class="row">
-        <h3>Examples</h3>
-        <div class="col-lg-4 py-lg-1">
-            Image placeholder
-        </div>
-        <div class="col-lg-8 py-lg-1">
-            Text placeholder
-        </div>
-        <div class="col-lg-4">
-            Image placeholder
-        </div>
-        <div class="col-lg-8">
-            Text placeholder
-        </div>
-    </div>
-    <div class="row-cols-auto"><p>&nbsp;</p></div>
-    <div class="row">
-        <h3>Why do we use them?</h3>
-        <div class="col-lg-4">
-            Image placeholder
-        </div>
-        <div class="col-lg-8">
-            Text placeholder
-        </div>
+        <div class="col-lg-1">&nbsp;</div>
     </div>
     <div class="row-cols-auto"><p>&nbsp;</p></div>
 </main>
