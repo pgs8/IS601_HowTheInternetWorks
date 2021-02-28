@@ -21,6 +21,6 @@
     - [ ] Topic pages
         - [x] Domain names and ICANN
         - [x] IP Addresses, Packets and Routing
-        - [ ] DNS
+        - [x] DNS
         - [ ] HTTP and HTTPS protocols
         - [ ] W3C and HTML and CSS
