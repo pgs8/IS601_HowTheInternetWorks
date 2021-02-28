@@ -20,7 +20,7 @@
     - [ ] an ABOUT page for bio and project info
     - [ ] Topic pages
         - [x] Domain names and ICANN
-        - [ ] IP Addresses, Packets and Routing
+        - [x] IP Addresses, Packets and Routing
         - [ ] DNS
         - [ ] HTTP and HTTPS protocols
         - [ ] W3C and HTML and CSS

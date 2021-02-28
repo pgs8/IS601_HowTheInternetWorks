@@ -31,7 +31,8 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownContent">
                         <li><a class="dropdown-item" href="domain-names-icann.html">Domain names and ICANN</a></li>
-                        <li><a class="dropdown-item active" href="ip-addresses-packets-routing.html">IP Addresses, Packets and
+                        <li><a class="dropdown-item active" href="ip-addresses-packets-routing.html">IP Addresses,
+                            Packets and
                             Routing</a></li>
                         <li><a class="dropdown-item" href="dns.html">DNS</a></li>
                         <li><a class="dropdown-item" href="http-https-protocols.html">HTTP and HTTPS protocols</a></li>
@@ -44,44 +45,89 @@
 </nav>
 
 <main class="container bg-light rounded">
-    <div class="text-center py-5 px-3">
-        <h1 class="border-bottom">IP Addresses, Packets and Routing</h1>
+    <div class="text-center py-3 px-3">
+        <h1 class="border-bottom display-4">IP Addresses, Packets, and Routing</h1>
     </div>
-    <div class="row py-5">
-        <h3>Intro</h3>
+    <div class="row py-2">
+        <div class="col-lg-1">&nbsp;</div>
         <div class="col-lg-8">
-            Text placeholder
+            <p>
+                <span class="lead">An <em>Internet Protocol (IP) Address</em></span> is a unique address that identifies
+                a device on a network. Billions of people use multiple devices each day to access the Internet. To keep
+                track of all these devices and what they're doing, unique identifiers - <em>IP Addresses</em> - are
+                necessary. An IP Address is like a mailing address for computers and other networked devices - if you
+                know the IP address of a device, you can send information to it. Since IP addresses are hard to remember
+                - after all they're just a string of numbers - <a href="domain-names-icann.html">domain names</a> are
+                nearly always used to send information.
+            </p>
+            <p>
+                <span class="lead"><em>Packets</em></span> are formatted units of data containing header information
+                and a payload sent from one device to another on a network. All information sent over the internet is
+                split into packets. Each packet is a small (max 64kB) segments of a larger message, and contains a
+                header and the payload. The header contains information about the packet itself - who sent it, where it
+                is going, and where it falls in the order of the larger message. The payload is the information itself.
+                As the packets are received, the destination device sends acknowledgements to the origin device, and
+                then reassembles the packets to get the larger message. The origin device will resend any packets for
+                which it does not receive an acknowledgement.
+            </p>
+            <p>
+                <span class="lead"><em>Routing</em></span> refers to the path a packet takes from one device to
+                another on a network. Each packet may take a different route from its origin to its destination. The
+                routing is handled by specialized devices called <em>routers</em>, which refer to routing tables to
+                determine which route to send packets. Routing tables can be static (manually updated) or dynamic
+                (automatic).
+            </p>
         </div>
-        <div class="col-lg-4">
-            Image placeholder
+        <div class="col-lg-3">
+            <img src="images/pic_ipAddressPacketsRouting_1.jpg" class="rounded float-left img-fluid"/>
+            <br/>
+            <br/>
+            <img src="images/pic_ipAddressPacketsRouting_2.jpg" class="rounded float-left img-fluid"/>
+
         </div>
+        <div class="col-lg-1">&nbsp;</div>
     </div>
-    <div class="row">
-        <h3>Examples</h3>
-        <div class="col-lg-4 py-lg-1">
-            Image placeholder
+    <div class="row py-2">
+        <div class="col-lg-1">&nbsp;</div>
+        <div class="col-lg-5">
+            <h2>Why do we use them?</h2>
+            <p>
+                Splitting larger messages into smaller packets to be sent over multiple routes from an origin device to
+                the destination allows for networks to be distributed, decentralized, and highly fault tolerant.
+            </p>
         </div>
-        <div class="col-lg-8 py-lg-1">
-            Text placeholder
-        </div>
+        <div class="col-lg-1">&nbsp;</div>
         <div class="col-lg-4">
-            Image placeholder
+            <h4>IP Address Examples</h4>
+            <table class="table table-dark table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">IP Address</th>
+                    <th scope="col">Domain Name</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row" class="font-monospace">54.83.189.142</th>
+                    <td><a href="https://www.njit.edu" class="text-light">njit.edu</a></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="font-monospace">172.217.6.206</th>
+                    <td><a href="https://www.google.com" class="text-light">google.com</a></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="font-monospace">192.0.43.7</th>
+                    <td><a href="https://www.icann.org" class="text-light">icann.org</a></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="font-monospace">104.77.193.38</th>
+                    <td><a href="https://www.slickdeals.net" class="text-light">slickdeals.net</a></td>
+                </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="col-lg-8">
-            Text placeholder
-        </div>
+        <div class="col-lg-1">&nbsp;</div>
     </div>
-    <div class="row-cols-auto"><p>&nbsp;</p></div>
-    <div class="row">
-        <h3>Why do we use them?</h3>
-        <div class="col-lg-4">
-            Image placeholder
-        </div>
-        <div class="col-lg-8">
-            Text placeholder
-        </div>
-    </div>
-    <div class="row-cols-auto"><p>&nbsp;</p></div>
 </main>
 </body>
 </html>
