@@ -19,7 +19,7 @@
     - [ ] Index page with a brief introduction to the topics below
     - [ ] an ABOUT page for bio and project info
     - [ ] Topic pages
-        - [ ] Domain names and ICANN
+        - [x] Domain names and ICANN
         - [ ] IP Addresses, Packets and Routing
         - [ ] DNS
         - [ ] HTTP and HTTPS protocols
