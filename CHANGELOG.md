@@ -10,3 +10,4 @@ Task | Enable GitHub Pages | 20210225
 Feature | Added content to Domain Names ICANN page | 20210227
 Feature | Added content to IP Address Packets Routing page | 20210227
 Feature | Added content to HTTP HTTPS page | 20210228
+Fix | Update HTTP HTTPS page | 20210301
