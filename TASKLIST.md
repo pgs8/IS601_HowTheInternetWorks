@@ -15,7 +15,7 @@
     - [x] Why do we use them?
     - [x] Image with caption
 - [x] Enable GitHub Pages
-- [ ] Add content to Pages
+- [x] Add content to Pages
     - [x] Index page with a brief introduction to the topics below
     - [x] an ABOUT page for bio and project info
     - [x] Topic pages
